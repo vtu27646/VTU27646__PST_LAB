@@ -1,0 +1,2 @@
+/* Week 2 Session 9 | LeetCode: Group Anagrams */
+import java.util.*;public class GroupAnagrams{public List<List<String>>groupAnagrams(String[]a){Map<String,List<String>>m=new HashMap<>();for(String s:a){char[]c=s.toCharArray();Arrays.sort(c);m.computeIfAbsent(new String(c),k->new ArrayList<>()).add(s);}return new ArrayList<>(m.values());}public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt();String[]a=new String[n];for(int i=0;i<n;i++)a[i]=s.next();System.out.println(new GroupAnagrams().groupAnagrams(a));}}
