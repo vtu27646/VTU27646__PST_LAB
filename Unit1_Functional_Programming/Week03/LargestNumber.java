@@ -1,0 +1,2 @@
+/* Week 3 Session 14 | LeetCode: Largest Number */
+import java.util.*;public class LargestNumber{public String largestNumber(int[]a){String[]s=new String[a.length];for(int i=0;i<a.length;i++)s[i]=String.valueOf(a[i]);Arrays.sort(s,(x,y)->(y+x).compareTo(x+y));if(s[0].equals("0"))return "0";StringBuilder b=new StringBuilder();for(String z:s)b.append(z);return b.toString();}public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();System.out.println(new LargestNumber().largestNumber(a));}}
