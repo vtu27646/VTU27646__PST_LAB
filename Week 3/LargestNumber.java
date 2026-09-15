@@ -1,0 +1,6 @@
+// Problem: Largest Number (LeetCode)
+// Solution: Order two numbers a,b by comparing the concatenations ab and ba.
+import java.util.*;
+class LargestNumber {
+    public String largestNumber(int[] nums){ String[] a=new String[nums.length];for(int i=0;i<nums.length;i++)a[i]=String.valueOf(nums[i]);Arrays.sort(a,(x,y)->(y+x).compareTo(x+y));if(a[0].equals("0"))return "0";StringBuilder s=new StringBuilder();for(String x:a)s.append(x);return s.toString(); }
+}
