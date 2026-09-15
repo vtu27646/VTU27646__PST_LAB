@@ -1,0 +1,2 @@
+/* Week 3 Session 13 | HackerRank: Java Arraylist */
+import java.util.*;public class JavaArraylist{public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt();List<List<Integer>>a=new ArrayList<>();while(n-->0){int k=s.nextInt();List<Integer>r=new ArrayList<>();while(k-->0)r.add(s.nextInt());a.add(r);}int q=s.nextInt();while(q-->0){int i=s.nextInt()-1,j=s.nextInt()-1;System.out.println(i>=0&&i<a.size()&&j>=0&&j<a.get(i).size()?a.get(i).get(j):"ERROR!");}}}
