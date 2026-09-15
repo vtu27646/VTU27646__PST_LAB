@@ -1,2 +1,0 @@
-/* Week 3 Session 14 | HackerRank: Java Comparator (same required problem as Week 1) */
-import java.util.*;public class JavaComparator{static class Player{String name;int score;Player(String n,int s){name=n;score=s;}}public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();List<Player>p=new ArrayList<>();while(n-->0)p.add(new Player(s.next(),s.nextInt()));p.sort((x,y)->x.score!=y.score?Integer.compare(y.score,x.score):x.name.compareTo(y.name));for(Player z:p)System.out.println(z.name+" "+z.score);}}

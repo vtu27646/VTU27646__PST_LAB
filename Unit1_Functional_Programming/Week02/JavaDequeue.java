@@ -1,2 +1,0 @@
-/* Week 2 Session 10 | HackerRank: Java Dequeue */
-import java.util.*;public class JavaDequeue{public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt(),m=s.nextInt(),best=0;Deque<Integer>d=new ArrayDeque<>();Map<Integer,Integer>f=new HashMap<>();for(int i=0;i<n;i++){int v=s.nextInt();d.addLast(v);f.put(v,f.getOrDefault(v,0)+1);if(d.size()>m){int z=d.removeFirst();f.put(z,f.get(z)-1);if(f.get(z)==0)f.remove(z);}if(d.size()==m)best=Math.max(best,f.size());}System.out.println(best);}}

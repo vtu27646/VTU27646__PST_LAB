@@ -1,2 +1,0 @@
-/* Week 2 Session 8 | LeetCode: Find the Highest Altitude */
-import java.util.*;public class FindTheHighestAltitude{public int largestAltitude(int[]g){int cur=0,best=0;for(int x:g){cur+=x;best=Math.max(best,cur);}return best;}public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();System.out.println(new FindTheHighestAltitude().largestAltitude(a));}}

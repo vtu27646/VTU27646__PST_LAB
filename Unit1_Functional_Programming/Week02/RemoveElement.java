@@ -1,2 +1,0 @@
-/* Week 2 Session 7 | LeetCode: Remove Element */
-import java.util.*;public class RemoveElement{public int removeElement(int[]a,int v){int k=0;for(int x:a)if(x!=v)a[k++]=x;return k;}public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt(),v=s.nextInt();int[]a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();int k=new RemoveElement().removeElement(a,v);System.out.println(k);for(int i=0;i<k;i++)System.out.print(a[i]+" ");}}

@@ -1,2 +1,0 @@
-/* Week 2 Session 7 | LeetCode: Remove Duplicates from Sorted Array */
-import java.util.*;public class RemoveDuplicatesFromSortedArray{public int removeDuplicates(int[]a){if(a.length==0)return 0;int k=1;for(int i=1;i<a.length;i++)if(a[i]!=a[k-1])a[k++]=a[i];return k;}public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();int k=new RemoveDuplicatesFromSortedArray().removeDuplicates(a);System.out.println(k);for(int i=0;i<k;i++)System.out.print(a[i]+" ");}}

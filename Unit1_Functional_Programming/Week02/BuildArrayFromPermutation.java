@@ -1,2 +1,0 @@
-/* Week 2 Session 6 | LeetCode: Build Array from Permutation */
-import java.util.*; public class BuildArrayFromPermutation{public int[]buildArray(int[]a){int[]b=new int[a.length];for(int i=0;i<a.length;i++)b[i]=a[a[i]];return b;}public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();System.out.println(Arrays.toString(new BuildArrayFromPermutation().buildArray(a)));}}

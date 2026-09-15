@@ -1,2 +1,0 @@
-/* Week 2 Session 8 | LeetCode: Maximum Subarray */
-import java.util.*;public class MaximumSubarray{public int maxSubArray(int[]a){int best=a[0],cur=a[0];for(int i=1;i<a.length;i++){cur=Math.max(a[i],cur+a[i]);best=Math.max(best,cur);}return best;}public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();System.out.println(new MaximumSubarray().maxSubArray(a));}}

@@ -1,2 +1,0 @@
-/* Week 3 Session 12 | LeetCode: Day of the Week */
-import java.time.*;import java.util.*;public class DayOfTheWeek{public String dayOfTheWeek(int d,int m,int y){return LocalDate.of(y,m,d).getDayOfWeek().toString();}public static void main(String[]x){Scanner s=new Scanner(System.in);String z=new DayOfTheWeek().dayOfTheWeek(s.nextInt(),s.nextInt(),s.nextInt());System.out.println(z.substring(0,1)+z.substring(1).toLowerCase());}}

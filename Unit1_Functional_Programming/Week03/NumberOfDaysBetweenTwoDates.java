@@ -1,2 +1,0 @@
-/* Week 3 Session 11 | LeetCode: Number of Days Between Two Dates */
-import java.time.*;import java.util.*;public class NumberOfDaysBetweenTwoDates{public int daysBetweenDates(String a,String b){return Math.abs((int)(LocalDate.parse(a).toEpochDay()-LocalDate.parse(b).toEpochDay()));}public static void main(String[]x){Scanner s=new Scanner(System.in);System.out.println(new NumberOfDaysBetweenTwoDates().daysBetweenDates(s.next(),s.next()));}}

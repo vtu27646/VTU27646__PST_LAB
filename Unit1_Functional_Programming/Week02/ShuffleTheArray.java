@@ -1,2 +1,0 @@
-/* Week 2 Session 6 | LeetCode: Shuffle the Array */
-import java.util.*;public class ShuffleTheArray{public int[]shuffle(int[]a,int n){int[]b=new int[2*n];for(int i=0;i<n;i++){b[2*i]=a[i];b[2*i+1]=a[i+n];}return b;}public static void main(String[]x){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]a=new int[2*n];for(int i=0;i<a.length;i++)a[i]=s.nextInt();System.out.println(Arrays.toString(new ShuffleTheArray().shuffle(a,n)));}}
